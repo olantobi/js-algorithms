@@ -1,7 +1,7 @@
 function binarySearch(sortedArray, num) {
 
   var start = 0;  
-  var end = sortedArray.length -1;
+  end = sortedArray.length -1;
   let iterCount = 0;
   var element;
   var mid;
@@ -21,6 +21,7 @@ function binarySearch(sortedArray, num) {
     }    
   }
 
+  
   return -1;
 }
 
