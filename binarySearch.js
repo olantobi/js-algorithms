@@ -9,8 +9,6 @@ function binarySearch(sortedArray, num) {
   while (start <= end) {    
     mid = Math.floor((end + start) / 2);
     element = sortedArray[mid];
-    
-    console.log(start, end, mid,  ++iterCount);
 
     if (element == num) {
       return mid;
@@ -20,16 +18,11 @@ function binarySearch(sortedArray, num) {
       start = mid + 1;        
     }    
   }
-
   
   return -1;
 }
 
 let sortedArray = [1, 2, 5, 8, 9, 11, 12, 13, 13, 14, 15];
-
-console.log("Array: ", sortedArray);
-
-console.log("Length: ", sortedArray.length);
 let searchValue = 13;
 
 let pos = binarySearch(sortedArray, searchValue);

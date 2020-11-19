@@ -1,12 +1,11 @@
 function reverseWords(sentence) {
-    let charArray = sentence.split('');    
     let reversed = [];
 
-    for (var i = charArray.length-1; i >= 0; i--) {
-        reversed.push(charArray[i]);
+    for (let i = sentence.length-1; i >= 0; i--) {
+        reversed.push(sentence[i]);
     } 
 
-    return reversed.join('').trim();
+    return reversed.join('');
 }
 
 let sentence = "this is a string of words";

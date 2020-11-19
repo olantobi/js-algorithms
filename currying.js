@@ -1,7 +1,9 @@
 function multiplyAndAdd(multiply) {
     const pow = multiply ** multiply
+
+    // return pow;
     return function(add) {
-        return pow + add
+        return pow * add
     }
 }
 
@@ -14,11 +16,11 @@ const multiplyAndAddArrow = multiply => {
 const multiplyAndAddMoreArrow = multiply => add => add + multiply ** multiply
 
 
-const result = multiplyAndAdd(2)(4)
-const result2 = multiplyAndAddArrow(2)(10)
+const result = multiplyAndAdd(2)(3)(4)
+// const result2 = multiplyAndAddArrow(2)(10)
 
-const result3 = multiplyAndAddMoreArrow(2)(6)
+// const result3 = multiplyAndAddMoreArrow(2)(6)
 
 console.log(result)
-console.log(result2)
-console.log(result3)
+// console.log(result2)
+// console.log(result3)
