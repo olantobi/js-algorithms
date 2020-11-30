@@ -5,7 +5,7 @@ class Node {
     }
 }
 
-class Queue {
+class StackQueue {
     constructor() {
         this.first = null;
         this.last = null;
@@ -13,7 +13,7 @@ class Queue {
     }
 
     peek() {
-        return this.first.value;
+        return this.first;
     }
 
     enqueue(value) {
@@ -39,33 +39,19 @@ class Queue {
         const nextVal = this.first;
         this.first = this.first.next;
         this.length--;
-        return nextVal.value;
-    }
-
-    empty() {
-        return this.length === 0;
+        return nextVal;
     }
 }
 
 const queue = new Queue();
-// queue.enqueue('Tobi');
-// queue.enqueue('Ade');
-// queue.enqueue('Lara');
-// console.log(queue);
-// console.log(queue.peek());
-// console.log(queue.dequeue());
-// console.log(queue);
-// console.log(queue.dequeue());
-// console.log(queue);
-// console.log(queue.dequeue());
-// console.log(queue);
-
-queue.push(1);
+queue.enqueue('Tobi');
+queue.enqueue('Ade');
+queue.enqueue('Lara');
 console.log(queue);
-queue.push(2);
+console.log(queue.peek());
+console.log(queue.dequeue());
 console.log(queue);
-console.log('Peeked', queue.peek());
+console.log(queue.dequeue());
 console.log(queue);
-console.log('Popped: ', queue.pop());
+console.log(queue.dequeue());
 console.log(queue);
-console.log(queue.empty());
