@@ -12,6 +12,7 @@ class Book {
     }
 }
 
+module.exports = Book;
 
-var book = new Book("Olanrewaju Tobi");
-console.log(book.writer);
+// var book = new Book("Olanrewaju Tobi");
+// console.log(book.writer);

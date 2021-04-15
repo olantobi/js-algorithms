@@ -1,5 +1,4 @@
 var palindromeChainLength = function(n) {
-  
     let counter = 0;
     
     while (!isPalindrome(n.toString())) {
@@ -26,5 +25,5 @@ var palindromeChainLength = function(n) {
           return false;
   }
   
-  let val = palindromeChainLength(8); 
+  let val = palindromeChainLength(435); 
   console.log("Val: "+val);
